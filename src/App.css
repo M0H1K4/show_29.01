@@ -39,6 +39,9 @@ body {
   border: none;
   text-transform: uppercase;
 }
+.submitBtn:hover{
+  cursor: pointer;
+}
 span{
   display: flex;
   flex-direction: column;

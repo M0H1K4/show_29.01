@@ -4,11 +4,12 @@ import image2 from "./assets/img.png";
 import "./App.css";
 
 function App() {
+  const [className, setClassName] = useState('numbers')
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [items, setItems] = useState('')
 
   function Button({ number }) {
-    return <div onClick={() => setItems(number)} className="numbers">{number}</div>;
+    return <div onClick={() => setItems(number)} className={className}>{number}</div>;
   }
 
   return (
